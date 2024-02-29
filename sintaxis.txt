@@ -1,0 +1,50 @@
+FUENTES DE TEXTO
+La fuente por defecto es Times New Roman.
+-font-family: maneja la familia de fuentes del elemento.
+
+De las fuentes que nos da CSS, hay 2 tipos: serifada y no serifada.
+-Cuando tiene "Sans" es que no es serifada.
+-Nos aparecen más de una fuente, esto es debido a que se busca la fuente que tenemos disponible, y en caso de no tenerla tiene otras opciones a buscar.
+
+EN CASO DE QUERER USAR UNA FUENTE CUSTOMIZADA
+Se suele usar Google Fonts.
+Al entrar elegimos la fuente que deseamos, seleccionamos "Get font", luego usamos la opción de tenerla como código.
+
+1) Podemos copiar el código HTML <link> y ponerlo dentro del head.
+2) Podemos copiar el de CSS @import y ponerlo en el css.
+
+Para habilitarlo, copiamos el font-family y lo ponemos en el CSS.
+
+El font-wight va a depender de lo que soporte la fuente.
+
+SI QUEREMOS AGREGAR OTRA FUENTE
+Copiamos el @import de esa fuente, borramos el que teníamos y lo reemplazamos por ese.
+
+En el selector universal ponemos el que queremos que se use en toda la página. Luego especificamos cual queremos que use la nueva fuente.
+
+:root -->Estoy diciendo que en la raíz de mi CSS van a existir 2 variables(caja que contiene X dato)
+
+:root{
+    --ff-normal: "Poppins", sans-serif;
+}
+
+-ff-normal es la variable y guarda el tipo de fuente.
+
+font-family: var(--ff-normal);
+
+Esto nos permite que, en caso de querer cambiar la fuente, no tengamos que escribir el tipo manualmente en todo el código CSS. Solo lo cambiamos en el ROOT.
+
+Hacemos una carpeta en donde va a contener el style.css y un nuevo archivo, font.css; ahí vamos a pegar la configuración de fuentes que hicimos en el style.css
+
+En el style.css vamos a llamar con @import a la carpeta que contiene font.css y lo llamamos.
+
+@import url(./font.css);
+
+ColorPick Eyedropper: extensión que sirve para detectar color.
+
+WhatFont: identifica fuentes.
+
+ICONOS: Bootstrap Icons.
+Copiamos el código del que queremos. Para habilitarlo vamos abajo de todo y usamos el CDN. Extraemos el @import y lo pegamos en style.css
+
+svg: imagen vectorial, estan calculadas línea por línea.
