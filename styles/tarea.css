@@ -13,6 +13,7 @@
     --text-color: rgb(47, 28, 106);
     --font: "DM Sans", sans-serif;
     --stars-color: #02AF90;
+    --flecha-color: #6A3EE7;
 }
 section{
     font-family: var(--font);
@@ -54,6 +55,9 @@ div{
     color: var(--stars-color);
     display: flex;
     justify-content: space-between;
+}
+.stars a{
+    color: var(--flecha-color);
 }
 .green-stars .bi-star-fill{
     padding-right: 8px;
